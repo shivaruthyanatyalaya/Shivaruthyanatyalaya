@@ -115,37 +115,89 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 5. Registration Form Submission
+  // 5. Registration Form Submission (GitHub Pages compatible using Web3Forms)
   const enrollmentForm = document.getElementById('enrollment-form');
   const formSuccessMsg = document.getElementById('form-success-msg');
+  const submitBtn = enrollmentForm.querySelector('.form-submit-btn');
+
+  // --- FORM CONFIGURATION ---
+  // To receive real email notifications for form submissions on GitHub Pages:
+  // 1. Go to https://web3forms.com/ and enter your email (shivaruthyanatyalaya@gmail.com) to get a free Access Key.
+  // 2. Paste your Access Key between the quotes below:
+  const WEB3FORMS_ACCESS_KEY = "c0e8bcf6-3dc7-4bf7-93f9-a87a121d4369"; 
 
   enrollmentForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // In a live app, this is where we send form data to a backend API (e.g., using fetch)
-    const formData = {
-      studentName: document.getElementById('student-name').value,
-      studentAge: document.getElementById('student-age').value,
-      experience: document.getElementById('experience').value,
-      parentName: document.getElementById('parent-name').value,
-      phone: document.getElementById('phone').value,
-      email: document.getElementById('email').value,
+    const studentName = document.getElementById('student-name').value;
+    const studentAge = document.getElementById('student-age').value;
+    const experience = document.getElementById('experience').value;
+    const parentName = document.getElementById('parent-name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+
+    const showSuccess = () => {
+      enrollmentForm.style.transition = 'opacity 0.3s ease';
+      enrollmentForm.style.opacity = '0';
+      
+      setTimeout(() => {
+        enrollmentForm.style.display = 'none';
+        formSuccessMsg.style.display = 'block';
+        formSuccessMsg.style.opacity = '0';
+        formSuccessMsg.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => {
+          formSuccessMsg.style.opacity = '1';
+        }, 50);
+      }, 300);
     };
 
-    console.log('Enrollment Application Submitted:', formData);
+    if (WEB3FORMS_ACCESS_KEY && WEB3FORMS_ACCESS_KEY.trim() !== "") {
+      // Disable button during submit
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
 
-    // Smooth transition to Success message
-    enrollmentForm.style.transition = 'opacity 0.3s ease';
-    enrollmentForm.style.opacity = '0';
-    
-    setTimeout(() => {
-      enrollmentForm.style.display = 'none';
-      formSuccessMsg.style.display = 'block';
-      formSuccessMsg.style.opacity = '0';
-      formSuccessMsg.style.transition = 'opacity 0.5s ease';
-      setTimeout(() => {
-        formSuccessMsg.style.opacity = '1';
-      }, 50);
-    }, 300);
+      // Prepare payload for Web3Forms
+      const payload = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `New Academy Application: ${studentName}`,
+        from_name: "Shivaruthyanatyalaya Website",
+        "Student Name": studentName,
+        "Student Age": studentAge,
+        "Prior Experience": experience,
+        "Parent/Guardian": parentName || "N/A",
+        "Contact Phone": phone,
+        "Contact Email": email
+      };
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+          showSuccess();
+        } else {
+          console.error(json);
+          alert("Something went wrong: " + (json.message || "Failed to submit."));
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Submit Application";
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Submission failed. Please check your internet connection.");
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit Application";
+      });
+    } else {
+      // Fallback/Demo mode: Log data and transition directly to success screen
+      console.log('Demo Mode - Form Data:', { studentName, studentAge, experience, parentName, phone, email });
+      showSuccess();
+    }
   });
 });
