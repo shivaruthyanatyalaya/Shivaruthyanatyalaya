@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivaruthyanatyalaya | School of Bharatanatyam by Guru Tharuthrithiya Sivaraj</title>
+  <meta name="description" content="Join Shivaruthyanatyalaya, a premium classical academy offering Bharatanatyam instruction for all ages, curated by Guru Tharuthrithiya Sivaraj. Learn basic Adavus, Margam, and Arangetram preparation.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <span class="logo-main">Shivaruthyanatyalaya</span>
+        <span class="logo-sub">Academy of Bharatanatyam</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#guru">The Guru</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#register" class="cta-btn">Join Academy</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tagline">Divine Movement & Classical Grace</p>
+      <h1 class="hero-title">Shivaruthya<span>Natyalaya</span></h1>
+      <p class="hero-desc">Preserving the sacred heritage of classical Bharatanatyam under the esteemed guidance and lineage of Guru Tharuthrithiya Sivaraj.</p>
+      <div class="hero-btns">
+        <a href="#register" class="btn btn-primary">Enroll Now</a>
+        <a href="#about" class="btn btn-secondary">Explore Legacy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="subtitle">Sacred Heritage</span>
+          <h2 class="section-title">The Art of Devotion</h2>
+          <h3>Preserving classical purity through generations.</h3>
+          <p>Bharatanatyam is one of the oldest and most profound classical dance forms of India, tracing its roots to the Natya Shastra, the ancient scripture on performing arts. At Shivaruthyanatyalaya, we believe dance is not merely a performance, but a spiritual discipline—a medium to connect the mortal soul with the divine.</p>
+          <p>Founded with the core vision of maintaining technical precision, emotional depth (Bhava), and absolute devotion, our academy passes on the ancient wisdom of rhythm (Tala) and expression (Abhinaya) in its most authentic form.</p>
+          
+          <div class="about-features">
+            <div class="feature-box">
+              <i class="fa-solid fa-om feature-icon"></i>
+              <h4>Traditional Lineage</h4>
+              <p>Following strict guru-sishya parampara for true artistic growth.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fa-solid fa-award feature-icon"></i>
+              <h4>Certification</h4>
+              <p>Structured curriculum including formal examination board options.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="assets/group_performance.jpg" alt="Students performing the Art of Devotion at Shivaruthyanatyalaya">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classes Section -->
+  <section class="section section-dark" id="classes">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Curriculum & Programs</span>
+        <h2 class="section-title">Nurturing Divine Talent</h2>
+        <p>Our courses are structured into rigorous levels, ensuring students of all age groups and skill levels build a strong foundation in theory, rhythm, and classical expression.</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Programs</button>
+        <button class="filter-btn" data-filter="foundation">Foundation</button>
+        <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+        <button class="filter-btn" data-filter="advanced">Advanced</button>
+      </div>
+
+      <div class="classes-grid">
+        <!-- Class 1 -->
+        <div class="class-card" data-category="foundation">
+          <div class="class-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('assets/art_of_devotion.jpg');">
+            <span class="class-badge">Kids & Beginners</span>
+          </div>
+          <div class="class-info">
+            <h3>Bala Nritya</h3>
+            <p>Introduction to basic steps (Adavus), head, neck, and eye movements (Shiro, Griva, and Drishti bhedas), and single-hand mudras (Asamyuta Hastas).</p>
+            <div class="class-details">
+              <span><i class="fa-regular fa-clock"></i> 2 Hours / Week</span>
+              <span><i class="fa-regular fa-user"></i> Age 5+</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 2 -->
+        <div class="class-card" data-category="intermediate">
+          <div class="class-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('assets/group_performance.jpg');">
+            <span class="class-badge">Intermediate</span>
+          </div>
+          <div class="class-info">
+            <h3>Margam Pravesha</h3>
+            <p>Developing complexity with combined footwork patterns, double-hand mudras (Samyuta Hastas), and learning the first items of the classical Margam: Alarippu, Jatiswaram, and Shabdam.</p>
+            <div class="class-details">
+              <span><i class="fa-regular fa-clock"></i> 3 Hours / Week</span>
+              <span><i class="fa-regular fa-user"></i> Age 8+</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 3 -->
+        <div class="class-card" data-category="advanced">
+          <div class="class-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('assets/group_performance.jpg');">
+            <span class="class-badge">Advanced</span>
+          </div>
+          <div class="class-info">
+            <h3>Arangetram Sadhana</h3>
+            <p>Mastering complex expressional items (Varnam, Padam, Ashtapadi, Tillana). Dedicated preparation for solo debut performances (Arangetram) and stage presentation.</p>
+            <div class="class-details">
+              <span><i class="fa-regular fa-clock"></i> 5 Hours / Week</span>
+              <span><i class="fa-regular fa-user"></i> Inv. Only</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Guru Section -->
+  <section class="section" id="guru" style="background-color: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+      <div class="guru-card">
+        <div class="guru-image">
+          <img src="assets/guru_portrait.jpg" alt="Guru Tharuthrithiya Sivaraj" class="guru-portrait-photo">
+        </div>
+        <div class="guru-info">
+          <span class="subtitle">The Acharya</span>
+          <h2 class="guru-name">Guru Tharuthrithiya Sivaraj</h2>
+          <span class="guru-title">MFA (Bharatanatyam) | Founder & Artistic Director of Nithyanatyalaya</span>
+          <p class="guru-bio">
+            Guru Tharuthrithiya Sivaraj, decorated with prestigious titles like <strong>Natyasironmani</strong>, <strong>Kala busitha</strong>, and <strong>Divya desa nirthya kala bushan</strong>, is a passionate Bharatanatyam exponent and Nattuvangam expert. 
+            Holding a Master of Fine Arts (MFA) in Bharatanatyam from Annamalai University under the mentorship of distinguished classical masters, Guru Tharuthrithiya has spent over a decade teaching, choreographing, and nurturing this divine art form.
+          </p>
+          <div class="guru-quote">
+            "Dance is not just motion—it is the language of devotion, connecting the mortal seeker to the ultimate cosmos through the purity of mudras, expressions, and rhythm."
+          </div>
+          <ul class="guru-credentials">
+            <li><i class="fa-solid fa-circle-check"></i> Mastered <span style="color: var(--secondary-color); font-weight: 600;">Nattuvangam</span> under traditional classical exponents</li>
+            <li><i class="fa-solid fa-circle-check"></i> Performed at the sacred <span style="color: var(--secondary-color); font-weight: 600;">Chidambaram Natyanjali Festival</span></li>
+            <li><i class="fa-solid fa-circle-check"></i> Successfully staged <span style="color: var(--secondary-color); font-weight: 600;">30+ Natyanjali programs</span> across Tamil Nadu</li>
+            <li><i class="fa-solid fa-circle-check"></i> Honored as <span style="color: var(--secondary-color); font-weight: 600;">"Promising Young Dancer"</span> by Chennai Dance Circle</li>
+            <li><i class="fa-solid fa-circle-check"></i> Performer in <span style="color: var(--secondary-color); font-weight: 600;">4 Bharatanatyam World Record</span> events</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Guru Details Sub-grid -->
+      <div class="guru-sub-grid">
+        <!-- Column 1: Teaching & Leadership -->
+        <div class="guru-sub-card">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Academy Leadership</h3>
+          <ul>
+            <li><strong>Shivaruthyanatyalaya</strong>: Founder and Artistic Director since Jan 2020. Manages academies at Chennai Harbor and Nolambur SNP Gardens, training students in Bharatanatyam theory, postures, expressions, and stage performance.</li>
+            <li><strong>Nithyanatyalaya</strong>: Instructor since 2014 (Redhills). Successfully trained and coordinated traditional <em>Salangai Pooja</em> debuts for multiple student batches (Jan 2023 & Nov 2025).</li>
+            <li><strong>School Coaching</strong>: Taught and choreographed school programs at Badal Chand Jain Vidyalaya Mat. School and Kaniyalal Agarwal Bal Niketan.</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Academic & Shastric Education -->
+        <div class="guru-sub-card">
+          <h3><i class="fa-solid fa-book-open-reader"></i> Education & Lineage</h3>
+          <ul>
+            <li><strong>MFA in Bharatanatyam</strong>: Master of Fine Arts degree from Annamalai University (2021-2023) guided by leading academic and classical dance veterans.</li>
+            <li><strong>Nattuvangam Specialization</strong>: Completed 3 levels of advanced Nattuvangam training under traditional masters.</li>
+            <li><strong>Graded Certification</strong>: Successfully completed seven grades in Bharatanatyam from the Bridge Academy.</li>
+            <li><strong>English Literature (BA)</strong>: Holds a Bachelor's degree from Patrician College of Arts & Science, Madras University.</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Festivals & Performances -->
+        <div class="guru-sub-card">
+          <h3><i class="fa-solid fa-masks-theater"></i> Festivals & Media</h3>
+          <ul>
+            <li><strong>Natyanjali Festivals</strong>: Performed in Chidambaram Natyanjali (2023) and Thiruvathirai festivals, completing 30+ Natyanjali programs across Tamil Nadu temples.</li>
+            <li><strong>Television Appearances</strong>: Solo dancer featured on Zee Tamil’s <em>Chennaiil Thiruvaiyaru</em> and Podhigai Channel’s Pongal celebrations.</li>
+            <li><strong>Choreographic Honors</strong>: Led school teams to 1st place in city-level classical dance competitions; Awarded Best Dancer at St. Anne's.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Glimpses of Grace</span>
+        <h2 class="section-title">The Gallery</h2>
+        <p>Capturing the elegance, precision, and expressions of students and stage performances at Shivaruthyanatyalaya.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-image="assets/guru_portrait.jpg">
+          <img src="assets/guru_portrait.jpg" alt="Guru Tharuthrithiya Sivaraj demonstrating Mudra">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Guru Mudra</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-image="assets/hero_nataraja.jpg">
+          <img src="assets/hero_nataraja.jpg" alt="Guru Tharuthrithiya Sivaraj posing next to the Nataraja statue">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Nataraja Sannidhi</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-image="assets/guru_temple.jpg">
+          <img src="assets/guru_temple.jpg" alt="Guru Tharuthrithiya Sivaraj at temple mandapam">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Temple Devotion</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-image="assets/student_makeup.jpg">
+          <img src="assets/student_makeup.jpg" alt="A young dancer getting makeup done for a Bharatanatyam performance">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Aharya Abhinaya</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-image="assets/anna_nagar_students.jpg">
+          <img src="assets/anna_nagar_students.jpg" alt="Guru Tharuthrithiya Sivaraj with students from Anna Nagar SNP Garden batch">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Nolambur SNP Gardens Batch</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-image="assets/practice_session.jpg">
+          <img src="assets/practice_session.jpg" alt="Guru Tharuthrithiya Sivaraj conducting an outdoor practice session with students">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Sadhana & Practice Session</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-image="assets/group_performance.jpg">
+          <img src="assets/group_performance.jpg" alt="Students in traditional green and pink silk costumes performing on stage at Shivaruthyanatyalaya">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Margam Presentation</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-image="assets/margazhi_utsav.jpg">
+          <img src="assets/margazhi_utsav.jpg" alt="Students holding certificates and shields at Margazhi Natya Utsav 2022 performance">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Margazhi Natya Utsav 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration/Contact Section -->
+  <section class="section section-dark" id="register">
+    <div class="container">
+      <div class="register-container">
+        <div class="register-info">
+          <span class="subtitle">Begin Your Journey</span>
+          <h2 class="section-title">Enroll Your Child or Yourself</h2>
+          <p>Admissions are open for new batches. Fill out the form to schedule a trial session or schedule a consultation with Guru Tharuthrithiya Sivaraj.</p>
+          
+          <ul class="contact-details">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Main Academy</h4>
+                <p>SNP Gardens, Nolambur Ambattur Estate, Chennai 600095<br><span style="color: var(--secondary-color); font-size: 0.8rem; font-weight: 500;">Landmark: Near Velammal Nexus School</span></p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone Call & WhatsApp</h4>
+                <p>+91 93617 36331</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>shivaruthyanatyalaya@gmail.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="register-form-wrapper" id="form-wrapper">
+          <form id="enrollment-form">
+            <div class="form-group">
+              <label for="student-name">Student's Full Name</label>
+              <input type="text" id="student-name" class="form-control" placeholder="Enter student's name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="student-age">Age of Student</label>
+              <input type="number" id="student-age" class="form-control" placeholder="Enter student's age" required min="4">
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Prior Dance Experience</label>
+              <select id="experience" class="form-control" required>
+                <option value="" disabled selected>Select prior experience...</option>
+                <option value="none">Beginner (No prior training)</option>
+                <option value="basic">1-2 Years (Basic steps/Adavus completed)</option>
+                <option value="intermediate">3-5 Years (Learning items/Margam)</option>
+                <option value="advanced">5+ Years (Advanced training)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="parent-name">Parent/Guardian Name (If minor)</label>
+              <input type="text" id="parent-name" class="form-control" placeholder="Enter parent name (optional)">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Contact Number</label>
+              <input type="tel" id="phone" class="form-control" placeholder="Enter phone number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter email address" required>
+            </div>
+
+            <button type="submit" class="form-submit-btn">Submit Application</button>
+          </form>
+          
+          <div class="form-success" id="form-success-msg">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Application Received!</h3>
+            <p>Thank you for submitting your application to Shivaruthyanatyalaya. Our team will contact you within 24-48 hours to schedule your introductory session with Guru Tharuthrithiya Sivaraj.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <span class="logo-main" style="color: var(--secondary-color); font-size: 1.5rem; font-weight:900; letter-spacing: 2px;">Shivaruthyanatyalaya</span>
+          <div class="logo-sub" style="font-size:0.65rem; letter-spacing:4px; text-transform:uppercase; color: var(--text-light)">Academy of Bharatanatyam</div>
+        </div>
+        <p>A sacred temple of dance committed to preserving the divine purity of Bharatanatyam under the instruction of Guru Tharuthrithiya Sivaraj.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Legacy</a></li>
+          <li><a href="#classes">Programs Offered</a></li>
+          <li><a href="#guru">Guru Profile</a></li>
+          <li><a href="#gallery">Photo Gallery</a></li>
+          <li><a href="#register">Admission Form</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Shivaruthyanatyalaya. All Rights Reserved. Crafted with devotions to Nataraja.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <img src="" alt="Zoomed view" id="lightbox-img">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
