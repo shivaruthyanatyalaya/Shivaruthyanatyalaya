@@ -611,19 +611,22 @@ header.scrolled .cta-btn {
 
 .guru-credentials {
   list-style: none;
+  margin-top: 20px;
 }
 
 .guru-credentials li {
-  margin-bottom: 18px; /* Better vertical spacing between items */
+  margin-bottom: 24px; /* Increased vertical spacing for premium look */
   display: flex;
-  align-items: flex-start; /* Align icon to top of multiline text */
-  font-size: 0.95rem;
-  color: #ffffff; /* Bright white text */
-  line-height: 1.6; /* Better line height spacing */
+  align-items: flex-start;
+  font-size: 1rem; /* Slightly larger for readability */
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.8; /* Expanded line height for perfect breathing room */
+  letter-spacing: 0.4px; /* Premium micro-spacing */
+  font-weight: 400;
 }
 
 .guru-credentials li span {
-  color: #f7d052 !important; /* Vibrant golden-yellow mix */
+  color: var(--secondary-color) !important; /* Cohesive Temple Gold */
   font-weight: 600;
 }
 
@@ -633,10 +636,10 @@ header.scrolled .cta-btn {
 }
 
 .guru-credentials li i {
-  color: #f7d052; /* Vivid yellow icon to match */
-  margin-right: 16px; /* Increased spacing between icon and text */
-  margin-top: 4px; /* Slightly adjust icon downward to match first line of text */
-  font-size: 1.1rem;
+  color: var(--secondary-color); /* Matches the brand gold */
+  margin-right: 18px; /* Breathing space between icon and text */
+  margin-top: 5px; /* Aligns with the first line of expanded text */
+  font-size: 1.15rem;
 }
 
 /* Guru Details Sub-grid */
